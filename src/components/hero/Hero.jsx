@@ -57,9 +57,9 @@ const Hero = () => {
           animate="animate"
           className="awards"
         >
-          <motion.h2 variants={awardVariants}>Secret community marketplace</motion.h2>
+          <motion.h2 variants={awardVariants}>Community marketplace</motion.h2>
           <motion.p variants={awardVariants}>
-            Top quality shit in the game.
+          Top-quality cultivars. Guaranteed!
           </motion.p>
           <motion.div variants={awardVariants} className="awardList">
             <motion.img variants={awardVariants} src="/award1.png" alt="" />
@@ -113,14 +113,20 @@ const Hero = () => {
           animate="animate"
           className="follow"
         >
+        <motion.a 
+  variants={followVariants} 
+  href="https://www.instagram.com/rootsandsunshine" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <img src="/instagram.png" alt="Instagram" />
+</motion.a>
+
           <motion.a variants={followVariants} href="/">
-            <img src="/instagram.png" alt="" />
+            <img style={{backgroundColor:"white", borderRadius:"4px", padding:"1px"}} src="/signal.png" alt="" />
           </motion.a>
           <motion.a variants={followVariants} href="/">
-            <img src="/facebook.png" alt="" />
-          </motion.a>
-          <motion.a variants={followVariants} href="/">
-            <img src="/youtube.png" alt="" />
+            <img style={{backgroundColor:"white", borderRadius:"4px", padding:"1px"}} src="/telegram.png" alt="" />
           </motion.a>
           <motion.div variants={followVariants} className="followTextContainer">
             <div className="followText">FOLLOW US</div>
