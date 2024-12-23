@@ -1,4 +1,4 @@
-import ComputerModelContainer from "./computer/ComputerModelContainer";
+import WeedModelContainer from "./weed/WeedModelContainer";
 import ConsoleModelContainer from "./console/ConsoleModelContainer";
 import Counter from "./Counter";
 import MugModelContainer from "./mug/MugModelContainer";
@@ -101,7 +101,7 @@ const Services = () => {
       </div>
       <div className="sSection right">
         {currentServiceId === 1 ? (
-          <ComputerModelContainer />
+          <WeedModelContainer />
         ) : currentServiceId === 2 ? (
           <MugModelContainer />
         ) : (

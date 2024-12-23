@@ -57,7 +57,7 @@ const Hero = () => {
           animate="animate"
           className="awards"
         >
-          <motion.h2 variants={awardVariants}>Community marketplace</motion.h2>
+          <motion.h2 variants={awardVariants}>Cannabis marketplace</motion.h2>
           <motion.p variants={awardVariants}>
           Top-quality cultivars. Guaranteed!
           </motion.p>
@@ -132,8 +132,7 @@ const Hero = () => {
             <div className="followText">FOLLOW US</div>
           </motion.div>
         </motion.div>
-        {/* BUBBLE */}
-        <Speech />
+        
         {/* CERTIFICATE */}
         <motion.div
           animate={{ opacity: [0, 1] }}
