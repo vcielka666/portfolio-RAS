@@ -1,16 +1,21 @@
-import { useGLTF } from '@react-three/drei'
+import { useGLTF } from '@react-three/drei';
 
 export function ConsoleModel(props) {
-  const { nodes, materials } = useGLTF('/consoleModel.glb')
+  const { nodes, materials } = useGLTF('/map.glb');
   return (
     <group {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]} scale={1.112}>
-        <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
-          <mesh geometry={nodes.Cube_Material_0.geometry} material={materials.Material} position={[0, 21.93, 0]} scale={100} />
+      <group position={[0, 3.637, -3.653]} rotation={[-0.004, 0, 0]}>
+        <group rotation={[Math.PI / 2, 0, 0]}>
+          <mesh
+            geometry={nodes['map001_01_-_Map_0'].geometry}
+            material={materials['01_-_Map']}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={[1.038, 1.038, 1]}
+          />
         </group>
       </group>
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/consoleModel.glb')
+useGLTF.preload('/map.glb');

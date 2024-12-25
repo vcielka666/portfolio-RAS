@@ -5,16 +5,17 @@ import { motion, useInView, useScroll, useTransform } from "motion/react";
 const items = [
   {
     id: 1,
-    img: "/p1.jpg",
-    title: "Full Stack Blog Application",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
+    img: "/shit.png",
+    title: "O.D.B",
+    desc: 'ODB, or "Old Dirty Bastard," is a cannabis strain renowned for its unforgettable aroma and potent effects. Earthy diesel tones intertwine with sweet citrus hints, creating a symphony of flavors that captivate the senses. Its dense, resin-coated buds not only showcase its premium genetics but also deliver a long-lasting, euphoric experience. Perfect for relaxation or creative exploration, ODB is a favorite among enthusiasts seeking depth, flavor, and potency.',
     link: "/",
   },
   {
     id: 2,
-    img: "/p2.jpg",
-    title: "School Management System",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
+    img: "/shit.png",
+    title: "Shit",
+    desc: 'Shit is a classic cannabis strain celebrated for its reliability and balanced effects. Known for its earthy, skunky aroma with subtle hints of sweetness, this strain is perfect for both novice and seasoned users. Shit offers a calming yet uplifting experience, making it ideal for relaxation or sparking casual conversations. With dense, resin-rich buds and a lineage rooted in old-school genetics, Shit is a timeless choice for those seeking a dependable and enjoyable cannabis experience.'
+,
     link: "/",
   },
   {
@@ -97,7 +98,7 @@ const ListItem = ({ item }) => {
         <motion.h1 variants={textVariants}>{item.title}</motion.h1>
         <motion.p variants={textVariants}>{item.desc}</motion.p>
         <motion.a variants={textVariants} href={item.link}>
-          <button>View Project</button>
+          <button>Buy</button>
         </motion.a>
       </motion.div>
     </div>
