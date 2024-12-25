@@ -10,7 +10,7 @@ const Counter = ({ from, to, text }) => {
 
   useEffect(() => {
     const animation = animate(from, to, {
-      duration: 4,
+      duration: 1,
       ease: "easeOut",
       onUpdate: (prev) => {
         setCount(Math.floor(prev));

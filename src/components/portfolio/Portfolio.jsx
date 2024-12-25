@@ -5,9 +5,9 @@ import { motion, useInView, useScroll, useTransform } from "motion/react";
 const items = [
   {
     id: 1,
-    img: "/shit.png",
+    img: "/ODB.png",
     title: "O.D.B",
-    desc: 'ODB, or "Old Dirty Bastard," is a cannabis strain renowned for its unforgettable aroma and potent effects. Earthy diesel tones intertwine with sweet citrus hints, creating a symphony of flavors that captivate the senses. Its dense, resin-coated buds not only showcase its premium genetics but also deliver a long-lasting, euphoric experience. Perfect for relaxation or creative exploration, ODB is a favorite among enthusiasts seeking depth, flavor, and potency.',
+    desc: 'ODB, A tribute to the late rapper Ol" Dirty Bastard, Karma Genetics" Old Dirty Biker crosses Biker Kush with Exodus Cheese. Biker Kush brings vigorous growth, a tight, dense OG bud structure, and tons of trichomes to the stink of Exodus Cheese. "Old Dirty Bastard," is a cannabis strain renowned for its unforgettable aroma and potent effects. Earthy diesel tones intertwine with sweet citrus hints, creating a symphony of flavors that captivate the senses. Its dense, resin-coated buds not only showcase its premium genetics but also deliver a long-lasting, euphoric experience. Perfect for relaxation or creative exploration, ODB is a favorite among enthusiasts seeking depth, flavor, and potency.',
     link: "/",
   },
   {
@@ -20,23 +20,24 @@ const items = [
   },
   {
     id: 3,
-    img: "/p3.jpg",
-    title: "Real-time Chat Application",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
+    img: "/ghostTrainHaze.png",
+    title: "Ghost Train Haze",
+    desc: "First bred by Rare Dankness, Ghost Train Haze is a sativa cross of Ghost OG and Neville’s Wreck. Unlike typical sativas, Ghost Train Haze grows dense buds blanketed in white, crystal-capped trichomes. With a sour citrus and floral aroma, Ghost Train Haze delivers a potent dose of THC to knock out pain, depression, and appetite loss, but patients prone to anxiety should steer clear of this heavy-hitter. Low doses are conducive to concentration and creativity, but you may notice some cerebral haziness as you smoke more. ",
     link: "/",
   },
   {
     id: 4,
-    img: "/p4.jpg",
-    title: "Social Media Project",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
+    img: "/jackHerer.png",
+    title: "Jack Herer",
+    desc: 'Jack Herer, also known as "JH," "The Jack," "Premium Jack," and "Platinum Jack" is a sativa-dominant marijuana strain that has gained as much renown as its namesake, the marijuana activist and author of The Emperor Wears No Clothes. Combining a Haze hybrid with a Northern Lights #5 and Shiva Skunk cross, Sensi Seeds created Jack Herer hoping to capture both cerebral elevation and heavy resin production. Its rich genetic background gives rise to several different variations of Jack Herer, each phenotype bearing its own unique features and effects. Leafly reviewers tell us that Jack Herer’s effects include feeling energetic, creative, and uplifted. However, consumers typically describe this 55% sativa hybrid as blissful, clear-headed, and creative. Jack Herer was created in the Netherlands in the mid-1990s, where it was later distributed by Dutch pharmacies as a recognized medical-grade strain. Since then, this spicy, pine-scented strain has taken home numerous awards for its quality and potency.'
+,
     link: "/",
   },
   {
     id: 5,
-    img: "/p5.jpg",
-    title: "Animated Portfolio Website",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
+    img: "/bananaKush.png",
+    title: "Banana Kush",
+    desc: "Banana kush is a hybrid marijuana strain made by crossing Ghost OG and Skunk Haze. The result is a strain that tastes and smells like a bushel of fresh bananas. Banana Kush tends to provide a mellow buzz alongside a relaxed sense of euphoria. A great choice when dealing with stress or depression, Banana Kush also helps stimulate your creative juices and can help you remain talkative in social settings.",
     link: "/",
   },
 ];

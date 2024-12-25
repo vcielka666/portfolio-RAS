@@ -1,6 +1,6 @@
 import { useGLTF } from '@react-three/drei';
 
-export function ConsoleModel(props) {
+export function MapModel(props) {
   const { nodes, materials } = useGLTF('/map.glb');
   return (
     <group {...props} dispose={null}>

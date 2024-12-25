@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { Chocolate } from "./Chocolate";
 import { OrbitControls, PerspectiveCamera, Stage } from "@react-three/drei";
 
-const MugModelContainer = () => {
+const ChocolateModelContainer = () => {
   return (
     <Canvas>
       <Suspense fallback="loading...">
@@ -20,4 +20,4 @@ const MugModelContainer = () => {
   );
 };
 
-export default MugModelContainer;
+export default ChocolateModelContainer;

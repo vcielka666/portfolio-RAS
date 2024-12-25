@@ -1,7 +1,7 @@
 import WeedModelContainer from "./weed/WeedModelContainer";
-import ConsoleModelContainer from "./console/ConsoleModelContainer";
+import MapModelContainer from "./map/MapModelContainer";
 import Counter from "./Counter";
-import MugModelContainer from "./mug/MugModelContainer";
+import ChocolateModelContainer from "./chocolate/ChocolateModelContainer";
 import "./services.css";
 import { motion, useInView } from "motion/react";
 import { useRef, useState } from "react";
@@ -94,18 +94,18 @@ const Services = () => {
             </motion.div>
           ))}
         </motion.div>
-        {/* <div className="counterList">
-          <Counter from={0} to={104} text="Projects Completed" />
-          <Counter from={0} to={72} text="Happy Clients" />
-        </div> */}
+        <div className="counterList">
+          {/* <Counter from={0} to={104} text="" /> */}
+          <Counter from={0} to={20} text="Years experience" />
+        </div>
       </div>
       <div className="sSection right">
         {currentServiceId === 1 ? (
           <WeedModelContainer />
         ) : currentServiceId === 2 ? (
-          <MugModelContainer />
+          <ChocolateModelContainer />
         ) : (
-          <ConsoleModelContainer />
+          <MapModelContainer />
         )}
       </div>
     </div>
