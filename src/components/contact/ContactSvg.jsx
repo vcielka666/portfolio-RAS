@@ -7,6 +7,7 @@ const ContactSvg = () => {
       width="100%"
       height="100%"
       viewBox="0 0 666.74068 729.25401"
+      
     >
       {/* <!-- STRING STARTS --> */}
       <motion.path
@@ -146,6 +147,69 @@ const ContactSvg = () => {
         transform="translate(-266.62966 -85.37299)"
         fill="#2f2e41"
       />
+       {/* Add the joint */}
+       <g transform="translate(35, 58) rotate(-5)"> {/* Position and rotate the joint */}
+        {/* Joint Body */}
+        <motion.path
+          d="M210 150 Q200 140 160 145 T110 150 L110 160 T160 165 Q200 160 210 150 Z"
+          fill="#D9B899" // Joint wrapper color
+        />
+        {/* Static Ember */}
+        <circle cx="110" cy="155" r="5" fill="red" /> {/* Ember */}
+        {/* Smoke Animation */}
+        <motion.g>
+          {/* Smoke Curl 1 */}
+          <motion.path
+            d="M100 140 C95 130 90 120 85 110 S80 90 75 80"
+            stroke="#CCCCCC"
+            strokeWidth="2"
+            fill="none"
+            animate={{
+              opacity: [1, 0.5, 0],
+              y: [-10, -50], // Moves upwards
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeOut",
+            }}
+          />
+          {/* Smoke Curl 2 */}
+          <motion.path
+            d="M102 138 C97 130 92 125 87 115 S82 95 77 85"
+            stroke="#E0E0E0"
+            strokeWidth="1.5"
+            fill="none"
+            animate={{
+              opacity: [0.8, 0.4, 0],
+              y: [-15, -60],
+            }}
+            transition={{
+              duration: 3.5,
+              repeat: Infinity,
+              ease: "easeOut",
+              delay: 0.5,
+            }}
+          />
+          {/* Smoke Curl 3 */}
+          <motion.path
+            d="M98 145 C93 135 88 125 83 115 S78 105 73 95"
+            stroke="#DDDDDD"
+            strokeWidth="2"
+            fill="none"
+            animate={{
+              opacity: [0.9, 0.5, 0],
+              y: [-20, -70],
+            }}
+            transition={{
+              duration: 4.5,
+              repeat: Infinity,
+              ease: "easeOut",
+              delay: 1,
+            }}
+          />
+        </motion.g>
+      </g>
       {/* <!-- HAIR ENDS --> */}
       {/* <!-- LEFT LEG STARTS --> */}
       <motion.polygon
@@ -245,11 +309,7 @@ const ContactSvg = () => {
         points="308.156 234.42 297.661 240.69 356.444 323.501 428.193 329.597 431.049 309.112 378.186 293.252 352.056 242.604 308.156 234.42"
         fill="#3f3d56"
       />
-      <path
-        d="M431.871,300.30715v-1.09442H413.52373V273.68148H412.4321v25.53125H391.4049V279.496q-.55143.43355-1.08883.89238v18.82431H376.428c-.15436.362-.30308.7268-.44339,1.09442h14.3315v21.45376H372.52165c.01684.36762.0421.72962.073,1.09444h17.72145v17.1153H377.03972c.16277.36761.33394.72961.51355,1.08882h12.7628v14.38762h1.08883V341.05947h21.0272v14.38762h1.09163V341.05947H431.871v-1.08882H413.52373a17.11187,17.11187,0,0,1,17.11528-17.1153h1.232v-1.09444H413.52373V300.30715Zm-19.43889,39.6635H391.4049v-17.1153h21.0272Zm0-18.20974H391.4049v-.42935a21.02578,21.02578,0,0,1,21.0272-21.02441Z"
-        transform="translate(-266.62966 -85.37299)"
-        fill="#e6e6e6"
-      />
+      
       {/* <!-- PHONE STARTS --> */}
       <motion.g
         animate={{

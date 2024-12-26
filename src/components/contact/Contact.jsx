@@ -91,6 +91,7 @@ const Contact = () => {
           {error && <span>Something went wrong!</span>}
         </motion.form>
       </div>
+      
       <div className="cSection"><ContactSvg/></div>
     </div>
   );
