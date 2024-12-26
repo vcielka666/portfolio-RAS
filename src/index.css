@@ -65,3 +65,30 @@ section {
     max-width: 1536px;
   }
 }
+
+.sunshine {
+  width: 50%;
+  height: 50%;
+  background: radial-gradient(circle, rgba(255, 223, 0, 0.5) 0%, rgba(255, 223, 0, 0) 50%);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulsate 3s infinite ease-in-out;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+}

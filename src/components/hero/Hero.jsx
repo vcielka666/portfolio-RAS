@@ -46,7 +46,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="hTitle"
         >
-          Welcome to
+          <span className="hTitleSpan">Welcome to</span>
           <br />
           <span>Roots & Sunshine</span>
         </motion.h1>
@@ -193,8 +193,10 @@ const Hero = () => {
         <Canvas>
           <Suspense fallback="loading...">
             <Shape />
+            
           </Suspense>
         </Canvas>
+        <div class="sunshine"></div>
         <div className="hImg">
           <img src="/hero.png" alt="" />
         </div>

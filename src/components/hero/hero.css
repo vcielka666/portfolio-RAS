@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "woodyFont";
+  src: url(/fonts/woodyFont.ttf) format("woff");
+}
+
 .hero {
   height: 100%;
   overflow: hidden;
@@ -40,11 +45,15 @@
 .hTitle {
   margin-top: 50px;
   font-size: 100px;
-  color: #6c2929;
 }
 
 .hTitle span {
   color: white;
+}
+.hTitleSpan{
+  color: #6c2929 !important;
+  
+  
 }
 
 .awards {

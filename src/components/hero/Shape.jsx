@@ -3,7 +3,7 @@ import { MeshDistortMaterial, Sphere } from "@react-three/drei";
 const Shape = () => {
   return (
     <>
-      <Sphere args={[1, 100, 200]} scale={1.6}>
+      <Sphere args={[1, 100, 200]} scale={.6}>
         <MeshDistortMaterial
           color="#ffe300"
           attach="material"
@@ -11,8 +11,11 @@ const Shape = () => {
           speed={2}
         />
       </Sphere>
+
+
       <ambientLight intensity={2} />
       <directionalLight position={[1, 2, 3]} />
+
     </>
   );
 };
