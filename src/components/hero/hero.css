@@ -42,14 +42,41 @@
   justify-content: space-between;
 }
 
+.hTitleContainer {
+  position: relative;
+  display: inline-block; /* Ensure the container wraps the content */
+  text-align: center; /* Center-align the text inside */
+  width: 100%; /* Adjust to your layout's width */
+  height: 250px; /* Set height for the container */
+}
+
+.hTitleImage {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Center the image */
+  width: 100%; /* Make it responsive */
+  height: 100%; /* Fill the container height */
+  background: url('/welcome.png') no-repeat center center;
+  background-size: contain; /* Ensure the image fits without cropping */
+  opacity: 0.7; /* Adjust opacity as needed */
+  z-index: 1; /* Place it behind the text */
+}
+
 .hTitle {
-  margin-top: 50px;
-  font-size: 100px;
+  font-size: 50px; /* Adjust size for the main text */
+  color: white;
+  z-index: 2; /* Ensure it appears above the image */
+  position: relative; /* Keep text on top of the image */
+  line-height: 1.2; /* Adjust line spacing */
+  margin: 0; /* Remove default margin */
+  top: 99px;
 }
 
 .hTitle span {
-  color: white;
+  position: relative;
 }
+
 .hTitleSpan{
   color: #6c2929 !important;
   

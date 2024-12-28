@@ -53,8 +53,8 @@ const services = [
   {
     id: 3,
     img: "/service3.png",
-    title: "Dead-drop marketplace",
-    description: "get your products delivered anonymously",
+    title: "Dead-drop service",
+    description: "optionally, get your products delivered anonymously",
   },
 ];
 

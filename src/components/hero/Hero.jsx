@@ -40,16 +40,13 @@ const Hero = () => {
     <div className="hero">
       <div className="hSection left">
         {/* TITLE */}
-        <motion.h1
-          initial={{ y: -100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="hTitle"
-        >
-          <span className="hTitleSpan">Welcome to</span>
-          <br />
-          <span>Roots & Sunshine</span>
-        </motion.h1>
+        <div class="hTitleContainer">
+  <div className="hTitleImage"></div>
+  <h1 className="hTitle">
+    <span>Roots & Sunshine</span>
+  </h1>
+</div>
+
         {/* AWARDS */}
         <motion.div
           variants={awardVariants}
@@ -57,7 +54,7 @@ const Hero = () => {
           animate="animate"
           className="awards"
         >
-          <motion.h2 variants={awardVariants}>Cannabis marketplace</motion.h2>
+          <motion.h2 variants={awardVariants}>V.I.P Cannabis marketplace</motion.h2>
           <motion.p variants={awardVariants}>
           Top-quality cultivars. Guaranteed!
           </motion.p>
@@ -196,7 +193,7 @@ const Hero = () => {
             
           </Suspense>
         </Canvas>
-        <div class="sunshine"></div>
+        <div className="sunshine"></div>
         <div className="hImg">
           <img src="/hero.png" alt="" />
         </div>
