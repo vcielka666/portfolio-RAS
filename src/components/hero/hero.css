@@ -267,7 +267,10 @@
   .hero {
     flex-direction: column;
   }
-
+  .hImg{
+    height: 75%;
+    
+  }
   
 
   .hSection {
