@@ -195,7 +195,9 @@
 
 .contactLink {
   margin-bottom: 50px;
+  cursor: pointer;  
 }
+
 
 .contactButton {
   position: relative;

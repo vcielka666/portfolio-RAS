@@ -61,7 +61,7 @@ const services = [
 const Services = () => {
   const [currentServiceId, setCurrentServiceId] = useState(1);
   const ref = useRef();
-  const isInView = useInView(ref, { margin: "-200px" });
+  const isInView = useInView(ref, { margin: "-150px" });
   return (
     <div className="services" ref={ref}>
       <div className="sSection left">

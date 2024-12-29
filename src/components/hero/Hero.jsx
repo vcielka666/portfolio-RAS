@@ -59,7 +59,7 @@ const Hero = ({scroll}) => {
           className="awards"
         >
           <motion.h2 variants={awardVariants}>
-            V.I.P Cannabis boutique
+          V.I.P Cannabis boutique
           </motion.h2>
           <motion.p variants={awardVariants} style={{color:"gold"}}>
           Top-quality cultivars. Guaranteed!

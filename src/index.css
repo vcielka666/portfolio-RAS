@@ -41,10 +41,16 @@ section {
   scroll-snap-align: center;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 640px) {
   .container {
     max-width: 640px;
+    
   }
+  
+.bg{
+  height: 44% !important;
+}  
+
 }
 
 @media (min-width: 768px) {

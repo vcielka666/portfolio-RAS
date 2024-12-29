@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { lazy, Suspense } from "react";
 import LazyLoad from "react-lazyload";
 
@@ -10,7 +10,6 @@ import Contact from "./components/contact/Contact";
 const App = () => {
   const [isLocked, setIsLocked] = useState(true); // Default: locked
   const [password, setPassword] = useState("");
-  const [loadContact, setLoadContact] = useState(false); // Control Contact section load
 
   const handleUnlock = () => {
     const correctPassword = import.meta.env.VITE_PASSWORD; // Access the password
@@ -28,13 +27,10 @@ const App = () => {
   };
 
   const handleScrollToContact = () => {
-    setLoadContact(true); // Trigger Contact section load
-    setTimeout(() => {
-      const contactSection = document.getElementById("contact");
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 100); // Wait for the section to load
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -75,19 +71,16 @@ const App = () => {
           </Suspense>
           <Suspense fallback={"loading..."}>
             <LazyLoad height={"600vh"} offset={-100}>
-              <Portfolio />
+              <Portfolio scroll={handleScrollToContact} />
             </LazyLoad>
           </Suspense>
-          {/* Render Contact section dynamically */}
-          {loadContact && (
-            <Suspense fallback={"loading..."}>
+          <Suspense fallback={"loading..."}>
+            <LazyLoad height={"100vh"} offset={-100}>
               <section id="contact">
                 <Contact />
               </section>
-            </Suspense>
-          )}
-
-       
+            </LazyLoad>
+          </Suspense>
         </>
       )}
     </div>
