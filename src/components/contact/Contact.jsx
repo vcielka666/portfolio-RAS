@@ -54,7 +54,7 @@ const Contact = () => {
   const isInView = useInView(ref, { margin: "-100px" });
 
   return (
-    <div className="contact" ref={ref} onSubmit={sendEmail} id="#contact">
+    <div className="contact" ref={ref} onSubmit={sendEmail} id="contact">
       <div className="cSection">
         <motion.form
           ref={form}
