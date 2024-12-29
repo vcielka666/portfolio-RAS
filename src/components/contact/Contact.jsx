@@ -51,7 +51,7 @@ const Contact = () => {
       );
   };
 
-  const isInView = useInView(ref, { margin: "-200px" });
+  const isInView = useInView(ref, { margin: "-100px" });
 
   return (
     <div className="contact" ref={ref} onSubmit={sendEmail} id="#contact">
