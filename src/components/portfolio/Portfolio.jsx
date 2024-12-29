@@ -29,7 +29,7 @@ const items = [
     id: 4,
     img: "/jackHerer.png",
     title: "Jack Herer",
-    desc: 'Jack Herer, also known as "JH," "The Jack," "Premium Jack," and "Platinum Jack" is a sativa-dominant marijuana strain that has gained as much renown as its namesake, the marijuana activist and author of The Emperor Wears No Clothes. Combining a Haze hybrid with a Northern Lights #5 and Shiva Skunk cross, Sensi Seeds created Jack Herer hoping to capture both cerebral elevation and heavy resin production. Its rich genetic background gives rise to several different variations of Jack Herer, each phenotype bearing its own unique features and effects. Leafly reviewers tell us that Jack Herer’s effects include feeling energetic, creative, and uplifted. However, consumers typically describe this 55% sativa hybrid as blissful, clear-headed, and creative. Jack Herer was created in the Netherlands in the mid-1990s, where it was later distributed by Dutch pharmacies as a recognized medical-grade strain. Since then, this spicy, pine-scented strain has taken home numerous awards for its quality and potency.'
+    desc: 'Jack Herer, also known as "The Jack" or "Premium Jack," is a renowned sativa-dominant marijuana strain named after the marijuana activist and author of The Emperor Wears No Clothes. Created by Sensi Seeds in the 1990s, it combines a Haze hybrid with Northern Lights #5 and Shiva Skunk to deliver cerebral elevation and heavy resin production. Known for its spicy, pine-scented aroma, Jack Herer is celebrated for its uplifting, creative, and blissful effects. Recognized as a medical-grade strain in Dutch pharmacies, it has won numerous awards for its quality and potency.'
 ,
     link: "/",
   },

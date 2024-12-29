@@ -35,16 +35,20 @@ const followVariants = {
   },
 };
 
-const Hero = () => {
+const Hero = ({scroll}) => {
   return (
     <div className="hero">
       <div className="hSection left">
         {/* TITLE */}
         <div class="hTitleContainer">
   <div className="hTitleImage"></div>
+  <div style={{display:"flex", justifyContent:"center", alignItems:"center", margin:"0 auto", width:"fit-content"}}>
+
   <h1 className="hTitle">
-    <span>Roots & Sunshine</span>
+    <span>RAS Farm</span><br/>
+    <span style={{fontSize:"1rem", position:"absolute", left:"50%", fontFamily:"ras", width:"100%", top:"94px", opacity:".5",transform:"translateX(-50%)"}}>Roots & Sunshine</span>
   </h1>
+  </div>
 </div>
 
         {/* AWARDS */}
@@ -54,14 +58,16 @@ const Hero = () => {
           animate="animate"
           className="awards"
         >
-          <motion.h2 variants={awardVariants}>V.I.P Cannabis marketplace</motion.h2>
-          <motion.p variants={awardVariants}>
+          <motion.h2 variants={awardVariants}>
+            V.I.P Cannabis boutique
+          </motion.h2>
+          <motion.p variants={awardVariants} style={{color:"gold"}}>
           Top-quality cultivars. Guaranteed!
           </motion.p>
           <motion.div variants={awardVariants} className="awardList">
+            <motion.img variants={awardVariants} src="/award3.png" alt="" />
             <motion.img variants={awardVariants} src="/award1.png" alt="" />
             <motion.img variants={awardVariants} src="/award2.png" alt="" />
-            <motion.img variants={awardVariants} src="/award3.png" alt="" />
           </motion.div>
         </motion.div>
         {/* SCROLL SVG */}
@@ -145,7 +151,7 @@ const Hero = () => {
         </motion.div>
         {/* CONTACT BUTTON */}
         <motion.a
-          href="/#contact"
+          onClick={scroll}
           className="contactLink"
           animate={{
             x: [200, 0],
@@ -164,7 +170,7 @@ const Hero = () => {
               ease: "linear",
             }}
           >
-           <svg viewBox="0 0 200 200" width="150" height="150">
+           <svg viewBox="0 0 200 200" width="100" height="100">
   <circle cx="100" cy="100" r="90" fill="transparent" />
   <path
     id="innerCirclePath"

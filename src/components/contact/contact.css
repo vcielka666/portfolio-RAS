@@ -1,7 +1,7 @@
 .contact {
   height: 100%;
   display: flex;
-  gap: 100px;
+  gap: 50px;
 }
 
 .cSection {
@@ -27,7 +27,7 @@ form {
   flex-direction: column;
   gap: 20px;
   background-color: rgba(2, 2, 45, 0.066);
-  padding: 50px;
+  padding: 20px;
   border-radius: 50px;
 }
 
@@ -77,11 +77,14 @@ label {
   .cSection {
     width: 100%;
   }
-
+  .form {
+    width: 100%;
+    padding: 0px;
+  }
   .cSection:first-child {
-    height: 70%;
+    height: 90%;
   }
   .cSection:last-child {
-    height: 30%;
+    display: none;
   }
 }
