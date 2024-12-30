@@ -25,7 +25,7 @@ const Contact = () => {
 
   const ref = useRef();
   const form = useRef();
-  const threemaId = "YX47P57C"; 
+  
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -52,15 +52,14 @@ const Contact = () => {
       );
   };
 
-  const copyToClipboard = () => {
-    navigator.clipboard
-      .writeText(threemaId)
-      .then(() => {
-        alert("Threema ID copied to clipboard!");
-      })
-      .catch((err) => {
-        console.error("Failed to copy text: ", err);
-      });
+  const handleCopyAndOpenThreema = () => {
+    const threemaId = "YX47P57C"; // Replace with your actual Threema ID
+    navigator.clipboard.writeText(threemaId).then(() => {
+      alert("Threema ID copied to clipboard!");
+      window.open("https://threema.id/" + threemaId, "_blank");
+    }).catch((err) => {
+      console.error("Failed to copy ID: ", err);
+    });
   };
 
   const isInView = useInView(ref, { margin: "-100px" });
@@ -107,9 +106,9 @@ const Contact = () => {
         <span> OR </span>
         <div className="divider"></div>
           </div>
-          <div className="vipContactItem" onClick={copyToClipboard}>
+          <div className="vipContactItem" onClick={handleCopyAndOpenThreema}>
           <img src="/threema.png" alt="" />
-          <p>Threema ID</p>
+          <p>Threema Messenger</p>
           </div>
         </div>
         </motion.form>

@@ -48,7 +48,7 @@ const services = [
     id: 2,
     img: "/service2.png",
     title: "Edibles",
-    description: "tasty and potent dark chocolate couch lockers",
+    description: "tasty and potent dark chocolate couch lockers. Original designs",
   },
   {
     id: 3,
