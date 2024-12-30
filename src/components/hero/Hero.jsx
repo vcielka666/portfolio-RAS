@@ -4,6 +4,7 @@ import Speech from "./Speech";
 import { motion } from "motion/react";
 import Shape from "./Shape";
 import { Suspense } from "react";
+import SunEffect from "./SunEffect";
 
 const awardVariants = {
   initial: {
@@ -192,18 +193,12 @@ const Hero = ({scroll}) => {
         </motion.a>
       </div>
       <div className="bg">
-        {/* 3d */}
-        <Canvas>
-          <Suspense fallback="loading...">
-            <Shape />
-            
-          </Suspense>
-        </Canvas>
-        <div className="sunshine"></div>
-        <div className="hImg">
-          <img src="/hero.png" alt="" />
-        </div>
-      </div>
+  <SunEffect />
+  <div className="hImg">
+    <img src="/hero.png" alt="" />
+  </div>
+</div>
+
     </div>
   );
 };
