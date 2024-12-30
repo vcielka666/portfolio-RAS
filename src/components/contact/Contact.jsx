@@ -25,6 +25,7 @@ const Contact = () => {
 
   const ref = useRef();
   const form = useRef();
+  const threemaId = "YX47P57C"; 
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -49,6 +50,17 @@ const Contact = () => {
           setSuccess(false);
         }
       );
+  };
+
+  const copyToClipboard = () => {
+    navigator.clipboard
+      .writeText(threemaId)
+      .then(() => {
+        alert("Threema ID copied to clipboard!");
+      })
+      .catch((err) => {
+        console.error("Failed to copy text: ", err);
+      });
   };
 
   const isInView = useInView(ref, { margin: "-100px" });
@@ -81,7 +93,7 @@ const Contact = () => {
             <textarea
               rows={10}
               name="user_message"
-              placeholder="Write your message..."
+              placeholder="Have a question or an order? Share your thoughts here!"
             ></textarea>
           </motion.div>
           <motion.button variants={listVariant} className="formButton">
@@ -89,7 +101,19 @@ const Contact = () => {
           </motion.button>
           {success && <span>Your message has been sent!</span>}
           {error && <span>Something went wrong!</span>}
+          <div className="vipContact">
+            <div className="dividerWrapper">
+        <div className="divider"></div>
+        <span> OR </span>
+        <div className="divider"></div>
+          </div>
+          <div className="vipContactItem" onClick={copyToClipboard}>
+          <img src="/threema.png" alt="" />
+          <p>Threema ID</p>
+          </div>
+        </div>
         </motion.form>
+       
       </div>
       
       <div className="cSection"><ContactSvg/></div>
