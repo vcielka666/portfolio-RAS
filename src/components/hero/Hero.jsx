@@ -36,7 +36,7 @@ const followVariants = {
   },
 };
 
-const Hero = ({scroll}) => {
+const Hero = () => {
   return (
     <div className="hero">
       <div className="hSection left">
@@ -152,7 +152,7 @@ const Hero = ({scroll}) => {
         </motion.div>
         {/* CONTACT BUTTON */}
         <motion.a
-          onClick={scroll}
+          href="#contact"
           className="contactLink"
           animate={{
             x: [200, 0],

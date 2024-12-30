@@ -133,5 +133,11 @@
     height: 50px;
     display: none;
   }
+  .pItem{
+    gap: 30px;
+  }
+  .pText h1 {
+    font-size: 42px;
+  }
 
 }

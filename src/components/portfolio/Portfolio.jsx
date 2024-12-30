@@ -24,13 +24,14 @@ const items = [
   },
   {
     id: 3,
-    img: "/ghostTrainHaze.png",
-    title: "Ghost Train Haze",
-    desc: 'Ghost Train Haze is a potent sativa-dominant strain bred by Rare Dankness, combining Ghost OG and Neville’s Wreck. With THC levels ranging from 22-27%, it provides a cerebral, energetic high. Its sour citrus and floral aroma make it a favorite for creativity and focus, though its intensity suits seasoned users best.',
+    img: "/jealousRuntz.png",
+    title: "Jealous Runtz",
+    desc: 'Jealous Runtz is a balanced hybrid strain celebrated for its sweet, fruity flavor profile and calming effects. With THC levels ranging from 20-25%, it offers a euphoric yet relaxing high, making it perfect for unwinding. Its candy-like aroma and smooth smoke make it a favorite among connoisseurs seeking both flavor and potency.',
     link: "/contact",
     price: "3g - $20",
     secondPrice: "10g - $60",
   },
+
   {
     id: 4,
     img: "/jackHerer.png",
