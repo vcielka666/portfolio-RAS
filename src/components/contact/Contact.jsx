@@ -76,7 +76,7 @@ const Contact = () => {
           <motion.h1 variants={listVariant} className="cTitle">
             Let's keep in touch
           </motion.h1>
-          <motion.div variants={listVariant} className="formItem">
+          <motion.div variants={listVariant} className="formItem" style={{display: "none"}}>
             <label>Name</label>
             <input type="text" name="user_username" placeholder="Name" />
           </motion.div>
