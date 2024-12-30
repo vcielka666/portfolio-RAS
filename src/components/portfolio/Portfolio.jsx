@@ -127,12 +127,14 @@ const ListItem = ({ item, scrollToContact }) => {
       >
         <motion.h1>{item.title}</motion.h1>
         <motion.p>{item.desc}</motion.p>
-        <motion.div>
+        <motion.div style={{ display: "flex", justifyContent: "space-between",marginTop: "22px" }}>
+          <div>
           <p style={{ color: "white", textDecoration:"underline" }}>{item.price}</p>
           <p style={{ color: "white", textDecoration:"underline" }}>{item.secondPrice}</p>
+          </div>
           <button
             onClick={scrollToContact}
-            style={{ marginTop: "22px", backgroundColor: "white",boxShadow:"0 0 4px 0px white", fontWeight:"bold" }}
+            style={{ backgroundColor: "white",boxShadow:"0 0 4px 0px white", fontWeight:"bold" }}
           >
             Contact Us
           </button>
