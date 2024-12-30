@@ -269,10 +269,10 @@
   }
   .hImg{
     height: 75% !important;
-
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
-  
-
   .hSection {
     width: 100%;
   }
