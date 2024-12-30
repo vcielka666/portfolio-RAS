@@ -8,11 +8,11 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 
 const App = () => {
-  const [isLocked, setIsLocked] = useState(true); // Default: locked
+  const [isLocked, setIsLocked] = useState(true); 
   const [password, setPassword] = useState("");
 
   const handleUnlock = () => {
-    const correctPassword = import.meta.env.VITE_PASSWORD; // Access the password
+    const correctPassword = import.meta.env.VITE_PASSWORD;
     if (password === correctPassword) {
       setIsLocked(false);
     } else {
@@ -26,25 +26,35 @@ const App = () => {
     }
   };
 
-  const handleScrollToContact = () => {
+  let isScrolling = false;
+
+const handleScrollToContact = () => {
+  if (!isScrolling) {
+    isScrolling = true;
     const contactSection = document.getElementById("contact");
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
-  };
+    setTimeout(() => {
+      isScrolling = false; // Reset after scroll completes
+    }, 1000); // Adjust delay to match animation duration
+  }
+};
+
 
   return (
     <div className="container">
       {/* Lock Screen */}
       {isLocked && (
         <div className="lockScreen">
-          <div className="lockContent">
-            <h2>Enter Password to Unlock</h2>
+          <div style={{color:"black", fontSize:"1rem"}} className="lockContent">
+            <h1>Vip Boutique</h1>
+            <h4>Enter Password to Unlock</h4>
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Enter password"
+              placeholder=""
               onKeyDown={handleEnter}
             />
             <button onClick={handleUnlock}>Unlock</button>
@@ -56,11 +66,11 @@ const App = () => {
       {!isLocked && (
         <>
           <Suspense fallback={"loading..."}>
-            <LazyLoad height={"100vh"} offset={-100}>
+            
               <section id="home">
                 <Hero scroll={handleScrollToContact} />
               </section>
-            </LazyLoad>
+            
           </Suspense>
           <Suspense fallback={"loading..."}>
             <LazyLoad height={"100vh"} offset={-100}>
@@ -75,11 +85,11 @@ const App = () => {
             </LazyLoad>
           </Suspense>
           <Suspense fallback={"loading..."}>
-            <LazyLoad height={"100vh"} offset={-100}>
+            
               <section id="contact">
                 <Contact />
               </section>
-            </LazyLoad>
+            
           </Suspense>
         </>
       )}
